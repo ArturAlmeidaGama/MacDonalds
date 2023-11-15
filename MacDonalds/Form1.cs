@@ -25,7 +25,7 @@ namespace MacDonalds
 
         private void CarregarDadosBanco()
         {
-            string conexao = "server=localhost;database=dbMacDonalds;uid=root;pwd=";
+            string conexao = "server=localhost;database=dbMacDonalds;uid=root;pwd=etec";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
             MySqlDataAdapter adapter = new MySqlDataAdapter("select * from tbPedidoItem", conexaoMYSQL);
@@ -37,7 +37,7 @@ namespace MacDonalds
 
         private void btnAlterarPedido_Click(object sender, EventArgs e)
         {
-            string conexao = "server=localhost;database=dbMacDonalds;uid=root;pwd=";
+            string conexao = "server=localhost;database=dbMacDonalds;uid=root;pwd=etec";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
             MySqlCommand comando = new MySqlCommand("update tbPedidoItem set vlProdutoItem=" + txtValor.Text + ", qtde=" + txtQuantidade.Text + " where idPedidoItem=" + txtId.Text, conexaoMYSQL);
@@ -56,7 +56,7 @@ namespace MacDonalds
 
             if (caixaMensagem == DialogResult.Yes)
             {
-                string conexao = "server=localhost;database=dbMacDonalds;uid=root;pwd=";
+                string conexao = "server=localhost;database=dbMacDonalds;uid=root;pwd=etec";
                 MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
                 conexaoMYSQL.Open();
                 MySqlCommand comando = new MySqlCommand("delete from tbPedidoItem where idPedidoItem=" + txtId.Text + ";", conexaoMYSQL);
@@ -80,7 +80,7 @@ namespace MacDonalds
 
         private void btnNovoPedido_Click(object sender, EventArgs e)
         {
-            string conexao = "server=localhost;database=dbMacDonalds;uid=root;pwd=";
+            string conexao = "server=localhost;database=dbMacDonalds;uid=root;pwd=etec";
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
             MySqlCommand comando = new MySqlCommand("insert into tbPedidoItem (vlProdutoItem,qtde) values (" + txtValor.Text + "," + txtQuantidade.Text + ");", conexaoMYSQL);
