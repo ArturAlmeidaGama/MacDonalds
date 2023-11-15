@@ -40,12 +40,16 @@ namespace MacDonalds
             this.btnExcluirPedido = new System.Windows.Forms.Button();
             this.btnNovoPedido = new System.Windows.Forms.Button();
             this.dgvList = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtId2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txtId2);
             this.groupBox1.Controls.Add(this.txtId);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
@@ -54,13 +58,13 @@ namespace MacDonalds
             this.groupBox1.Controls.Add(this.txtQuantidade);
             this.groupBox1.Location = new System.Drawing.Point(12, 9);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(482, 106);
+            this.groupBox1.Size = new System.Drawing.Size(482, 111);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(31, 13);
+            this.txtId.Location = new System.Drawing.Point(70, 13);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 3;
@@ -70,14 +74,14 @@ namespace MacDonalds
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 13);
+            this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Id:";
+            this.label1.Text = "Id produto:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 45);
+            this.label2.Location = new System.Drawing.Point(6, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 1;
@@ -86,7 +90,7 @@ namespace MacDonalds
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 72);
+            this.label3.Location = new System.Drawing.Point(6, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 2;
@@ -94,21 +98,21 @@ namespace MacDonalds
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(46, 42);
+            this.txtValor.Location = new System.Drawing.Point(70, 59);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(85, 20);
+            this.txtValor.Size = new System.Drawing.Size(100, 20);
             this.txtValor.TabIndex = 4;
             // 
             // txtQuantidade
             // 
-            this.txtQuantidade.Location = new System.Drawing.Point(77, 69);
+            this.txtQuantidade.Location = new System.Drawing.Point(70, 82);
             this.txtQuantidade.Name = "txtQuantidade";
-            this.txtQuantidade.Size = new System.Drawing.Size(54, 20);
+            this.txtQuantidade.Size = new System.Drawing.Size(100, 20);
             this.txtQuantidade.TabIndex = 5;
             // 
             // btnAlterarPedido
             // 
-            this.btnAlterarPedido.Location = new System.Drawing.Point(323, 351);
+            this.btnAlterarPedido.Location = new System.Drawing.Point(326, 354);
             this.btnAlterarPedido.Name = "btnAlterarPedido";
             this.btnAlterarPedido.Size = new System.Drawing.Size(83, 23);
             this.btnAlterarPedido.TabIndex = 14;
@@ -118,7 +122,7 @@ namespace MacDonalds
             // 
             // btnExcluirPedido
             // 
-            this.btnExcluirPedido.Location = new System.Drawing.Point(412, 351);
+            this.btnExcluirPedido.Location = new System.Drawing.Point(415, 354);
             this.btnExcluirPedido.Name = "btnExcluirPedido";
             this.btnExcluirPedido.Size = new System.Drawing.Size(82, 23);
             this.btnExcluirPedido.TabIndex = 13;
@@ -128,7 +132,7 @@ namespace MacDonalds
             // 
             // btnNovoPedido
             // 
-            this.btnNovoPedido.Location = new System.Drawing.Point(233, 351);
+            this.btnNovoPedido.Location = new System.Drawing.Point(236, 354);
             this.btnNovoPedido.Name = "btnNovoPedido";
             this.btnNovoPedido.Size = new System.Drawing.Size(84, 23);
             this.btnNovoPedido.TabIndex = 12;
@@ -139,17 +143,33 @@ namespace MacDonalds
             // dgvList
             // 
             this.dgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvList.Location = new System.Drawing.Point(12, 123);
+            this.dgvList.Location = new System.Drawing.Point(12, 126);
             this.dgvList.Name = "dgvList";
             this.dgvList.Size = new System.Drawing.Size(485, 222);
             this.dgvList.TabIndex = 11;
             this.dgvList.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvList_CellMouseDoubleClick);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 39);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Id pedido:";
+            // 
+            // txtId2
+            // 
+            this.txtId2.Location = new System.Drawing.Point(70, 36);
+            this.txtId2.Name = "txtId2";
+            this.txtId2.Size = new System.Drawing.Size(100, 20);
+            this.txtId2.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 378);
+            this.ClientSize = new System.Drawing.Size(503, 382);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnAlterarPedido);
             this.Controls.Add(this.btnExcluirPedido);
@@ -178,6 +198,8 @@ namespace MacDonalds
         private System.Windows.Forms.Button btnExcluirPedido;
         private System.Windows.Forms.Button btnNovoPedido;
         private System.Windows.Forms.DataGridView dgvList;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtId2;
     }
 }
 
